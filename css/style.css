@@ -1,3 +1,4 @@
+/* 全站通用 */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,7 @@ body {
     color: #333;
 }
 
+/* header */
 header {
     text-align: center;
     padding: 30px;
@@ -19,38 +21,27 @@ header {
     margin-top: 10px;
 }
 
+/* 專案作品照片 */
 .project-photo {
-    width: 200px;
-    border-radius: 10px;
+    width: 200px;         /* 照片大小 */
+    border-radius: 10px;  /* 圓角 */
     margin-top: 10px;
 }
 
-
-section {
-    padding: 20px;
-    margin: 0 10%;
-    background: white;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-h2 {
-    color: #4CAF50;
-}
-
+/* 專案作品區塊排版 */
 ul {
-    list-style-type: none;
+    list-style: none;      /* 去掉小圓點 */
     padding: 0;
 }
 
 li {
-    margin-bottom: 15px;
+    margin-bottom: 30px;   /* 每個作品間距 */
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #333;
-    color: white;
+/* gallery 版面，如果你想照片橫向排列 */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
